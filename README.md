@@ -70,3 +70,17 @@ The app is deployed on [Vercel](https://vercel.com), with auto-updates triggered
 While this is a personal learning project, suggestions, issues, or ideas for improvements are always welcome. Feel free to fork, star ⭐, or open a pull request.
 
 ---
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/GitPeek.git
+
+# Move into the directory
+cd gitbuddy
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+````
