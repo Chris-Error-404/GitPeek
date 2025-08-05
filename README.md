@@ -24,7 +24,7 @@ GitPeek is a mini React application that allows users to search and view GitHub 
 
 - ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) – UI library for building interactive components
 - ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) – Utility-first CSS framework
-- ![AOS](https://img.shields.io/badge/-AOS%20CSS-29A19C?logo=css3&logoColor=white&style=for-the-badge) - CSS AOS Library
+- ![AOS](https://img.shields.io/badge/AOS-CSS%20Library-29A19C?style=for-the-badge&logo=css3&logoColor=white) – CSS AOS library
 - ![GitHub API](https://img.shields.io/badge/GitHub%20API-181717?style=for-the-badge&logo=github&logoColor=white) – To fetch live GitHub profile data
 - ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) – Fast React development environment
 - ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) – Hosting and CI/CD
