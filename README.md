@@ -1,7 +1,7 @@
-# 🕵️‍♂️ GitPeek
+# GitPeek
 <br>
 
-## 📝 Overview
+## Overview
 
 GitPeek is a mini React application that allows users to search and view GitHub profiles of their friends, colleagues, or favorite developers — just by entering their username. It fetches real-time data from the GitHub API and displays it in a clean, responsive card layout. Perfect for quick lookups and profile sharing.
 
@@ -9,7 +9,7 @@ GitPeek is a mini React application that allows users to search and view GitHub 
 
 <br>
 
-## 🎯 Project Goals
+## Project Goals
 
 - Provide a simple and clean GitHub user search experience
 - Practice API integration in React using `fetch`
@@ -20,7 +20,7 @@ GitPeek is a mini React application that allows users to search and view GitHub 
 
 <br>
 
-## 🧰 Tech Stack & Tools
+## Tech Stack & Tools
 
 - ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) – UI library for building interactive components
 - ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) – Utility-first CSS framework
@@ -32,7 +32,7 @@ GitPeek is a mini React application that allows users to search and view GitHub 
 
 <br>
 
-## 🚀 Deployment
+## Deployment
 
 The app is deployed on [Vercel](https://vercel.com), with auto-updates triggered on every push to the main branch.
 
@@ -42,7 +42,7 @@ The app is deployed on [Vercel](https://vercel.com), with auto-updates triggered
 
 <br>
 
-## 🧠 How It Works
+## How It Works
 
 1. User enters a valid GitHub username.
 2. The app fetches their profile data from the GitHub REST API.
@@ -53,7 +53,7 @@ The app is deployed on [Vercel](https://vercel.com), with auto-updates triggered
 
 <br>
 
-## 🛠 Features
+## Features
 
 - Search any public GitHub account
 - Responsive design (mobile-first)
@@ -65,7 +65,7 @@ The app is deployed on [Vercel](https://vercel.com), with auto-updates triggered
 
 <br>
 
-## 🤝 Contributions
+## Contributions
 
 While this is a personal learning project, suggestions, issues, or ideas for improvements are always welcome. Feel free to fork, star ⭐, or open a pull request.
 
