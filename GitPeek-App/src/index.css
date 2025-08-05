@@ -17,6 +17,7 @@
   --white: #fafafa;
   --light-gray: #d4d4d4; /* header text color */
   --dark-gray: #a1a1a1;
+  --tag: #262626;
 
   /* shadcn | dark */
   --background: hsl(222.2, 84%, 4.9%); /*  Main app/page background */
