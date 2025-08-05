@@ -4,6 +4,9 @@
 /* google font | sora */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+/* google font | fira code */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57,4 +60,8 @@ body{
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.typicalDeveloper{
+  font-family: "Fira Code", monospace;
 }
