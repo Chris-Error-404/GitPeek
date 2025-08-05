@@ -3,7 +3,7 @@
 
 ## Overview
 
-GitPeek is a mini React application that allows users to search and view GitHub profiles of their friends, colleagues, or favorite developers — just by entering their username. It fetches real-time data from the GitHub API and displays it in a clean, responsive card layout. Perfect for quick lookups and profile sharing.
+GitPeek is a mini React application that allows users to search and view GitHub profiles of their friends, colleagues, or favorite developers — just by entering their username. It fetches real-time data from the GitHub API and displays it in a clean, responsive card layout. Perfect for quick lookups and profile sharing. (This project is almost totally useless but i wanted to build something less generic like To Do app with react)
 
 ---
 
