@@ -16,7 +16,7 @@ function Hero(){
                         The Easiest Way to Peek GitHub Profiles
                     </h1>
                     <p className="mb-4 text-lg font-normal text-[var(--foreground)] lg:w-[60%] text-center">
-                        Tired of guessing your friends’ GitHub usernames? GitPeek makes it simple. Enter a username and instantly preview their profile fast, clean and frustration free.
+                        Want to take a quick look at someone's Github porfile? GitPeek makes it simple. Enter a username and instantly preview their profile fast, clean and frustration free.
                     </p>
 
                     <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
