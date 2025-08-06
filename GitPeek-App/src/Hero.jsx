@@ -12,10 +12,10 @@ function Hero(){
 
                     <ContributeButton />
 
-                    <h1 className="mb-2 text-[var(--foreground)] text-[min(20vw,30px)] sm:text-[28px] md:text-[32px] font-semibold text-center">
+                    <h1 className="mb-2 text-[var(--background)] dark:text-[var(--foreground)] text-[min(8vw,40px)]  font-bold text-center">
                         The Easiest Way to Peek GitHub Profiles
                     </h1>
-                    <p className="mb-4 text-base lg:text-lg font-normal text-[var(--foreground)] lg:w-[60%] text-center">
+                    <p className="mb-5 text-base lg:text-lg font-normal text-[var(--darker-gray)] dark:text-[var(--foreground)] lg:w-[60%] text-center">
                         Want to take a quick look at someone's Github porfile? GitPeek makes it simple. Enter a username and instantly preview their profile fast, clean and frustration free.
                     </p>
 

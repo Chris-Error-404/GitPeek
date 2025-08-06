@@ -1,8 +1,11 @@
-/* Tailwindcss */
-@import 'tailwindcss';
-
 /* google font | Geist | Fira Code */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist:wght@100..900&display=swap');
+
+
+/* Tailwindcss */
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 :root {
   font-synthesis: none;
@@ -13,8 +16,12 @@
   --black: hsl(222.2 84% 4.9%);
   --white: #fafafa;
   --light-gray: #d4d4d4; /* header text color */
+
   --dark-gray: #a1a1a1;
+  --darker-gray: #4a4a4a; /* for light mode */
+  
   --tag: #262626;
+  --lighter-tag: #f8fafc; /* for light mode */
 
   /* shadcn | dark */
   --background: hsl(222.2, 84%, 4.9%); /*  Main app/page background */
@@ -31,6 +38,8 @@
   --card-foreground: hsl(210, 40%, 98%); /*  Text inside cards */
 
   --border: hsl(216, 34%, 17%); /*  Borders (card, inputs, etc.) */
+  --lighter-border:  	hsl(210, 20%, 92%); /* for light mode */
+
   --input: hsl(216, 34%, 17%); /*  Input background or border */
 
   --primary: hsl(210, 40%, 98%); /*  Primary text/button color (light text on dark) */
