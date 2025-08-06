@@ -21,7 +21,7 @@ function Peek(){
                 <div className="flex flex-col gap-6">
 
                     {/* Input username*/}
-                    <div data-aos="fade-up" data-aos-easing="ease-in-cubic" data-aos-delay="50" className="flex justify-start items-center gap-4 lg:max-w-[80%] min-w-[78%]">
+                    <div className="flex justify-start items-center gap-4 lg:max-w-[80%] min-w-[78%]">
 
  
                         <div className="">
