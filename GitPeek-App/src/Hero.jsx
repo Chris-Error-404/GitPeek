@@ -1,20 +1,32 @@
+import ContributeButton from "./components/ContributeButton.jsx";
+import MoreProjectsButton from "./components/MoreProjectsButton.jsx";
+import ConnectOnXButton from "./components/ConnectOnXButton.jsx";
+
 function Hero(){
     return(
         <>
-        <section id="hero">
+        <section id="hero" className="mt-10">
             <div className="mx-auto max-w-[1400px] p-4 flex flex-col items-center justify-center">
 
                 <div className="flex flex-col items-center justify-center">
-                    <a href="https://github.com/Chris-Error-404/GitPeek" target="_blank" rel="noopener" className="mb-2 px-2 py-1 rounded-sm bg-[var(--tag)] fork text-[var(--foreground)] text-xs flex items-center justify-center gap-2">
-                        Contribute to this repository
-                        <i className="bx bx-arrow-back text-[var(--foreground)] rotate-180"></i>
-                    </a>
-                    <h1 className="mb-2 text-[var(--foreground)] text-[min(14vw,36px)] font-bold text-center">
+
+                    <ContributeButton />
+
+                    <h1 className="mb-2 text-[var(--foreground)] text-[min(10vw,36px)] sm:text-[28px] md:text-[32px] font-semibold text-center">
                         The Easiest Way to Peek GitHub Profiles
                     </h1>
-                    <p className="text-lg font-normal text-[var(--foreground)] lg:w-[60%] text-center">
+                    <p className="mb-4 text-lg font-normal text-[var(--foreground)] lg:w-[60%] text-center">
                         Tired of guessing your friends’ GitHub usernames? GitPeek makes it simple. Enter a username and instantly preview their profile fast, clean and frustration free.
                     </p>
+
+                    <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
+                    {/* github button */}
+                    <MoreProjectsButton />
+                    <ConnectOnXButton />
+
+                    {/* twitter button */}
+                    
+                </div>
                 </div>
 
             </div>
