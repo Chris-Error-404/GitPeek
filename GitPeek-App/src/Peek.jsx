@@ -36,7 +36,7 @@ function Peek(){
 
                     {/* peek result */}
                     <div>
-                        {/* <PeekCard /> */}
+                        <PeekCard />
                     </div>
                 </div>
 
