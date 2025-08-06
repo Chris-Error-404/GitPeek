@@ -5,7 +5,7 @@ function BulletPointCard(props){
 
                 {/* icon */}
                 <div>
-                    <i className="bx bxs-check-circle text-[var(--foreground)] text-3xl"></i>
+                    <i className="bx bxs-check-circle text-[var(--foreground)] text-[min(14vw,30px)]"></i>
                 </div>
 
                 <div className="">

@@ -5,7 +5,7 @@ import InputTag from "./components/InputTag.jsx";
 function Peek(){
     return(
         <>
-            <div className="border border-[var(--tag)] rounded-xs py-4 px-4">
+            <div data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-cubic" className="border border-[var(--tag)] rounded-xs py-4 px-4">
 
                 {/* TAKE A PEEK*/}
                 <div className="flex justify-start items-center lg:max-w-[80%] min-w-[78%]">

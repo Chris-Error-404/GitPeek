@@ -21,7 +21,7 @@ function Hero(){
 
                     <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
                     {/* github button */}
-                    <MoreProjectsButton />
+                    <MoreProjectsButton buttonText="View more projects" buttonLink="https://github.com/Chris-Error-404"/>
                     <ConnectOnXButton />
 
                     {/* twitter button */}
