@@ -11,6 +11,10 @@ const user = {
     created_at: '2024-10-22',
     followers: '13',
     following: '17',
+    company: 'TechHubSquare',
+    public_repos: '30',
+    public_gist: '1',
+    location: 'Port Harcourt, Rivers State',
     blog: 'https://nzenwata-christopher.vercel.app/'
 }
 
@@ -42,13 +46,16 @@ function PeekCard(){
 
             {/* Card bottom | Extra */}
             <ul className="more text-[var(--dark-gray)] pt-4 text-sm flex flex-col gap-1.5">
-                <li>type: {user.type}</li>
-                <li>id: {user.id}</li>
                 <li>followers: {user.followers}</li>
                 <li>following: {user.following}</li>
+                <li>public_repos: {user.public_repos}</li>
+                <li>public_gist: {user.public_gist}</li>
                 <li>blog: <a href={user.blog} className="underline">{user.blog}</a></li>
+                <li>company: {user.company}</li>
+                <li>location: {user.location}</li>
+                <li>type: {user.type}</li>
+                <li>id: {user.id}</li>
                 <li>created_at: {user.created_at}</li>
-                <li><a href="https://api.github.com/user/{/user.id}" className="underline">More</a></li>
             </ul>
         </div>
         </>
