@@ -3,7 +3,7 @@ import BulletPointCard from "./components/BulletPointCard.jsx";
 function HowItWorks(){
     return(
         <>
-        <div data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-cubic" className="border border-[var(--tag)] rounded-xs py-4 pb-5 px-4 h-fit">
+        <div className="border border-[var(--tag)] rounded-xs py-4 pb-5 px-4 h-fit">
 
             {/* HOW IT WORKS HEADER */}
             <div className="flex justify-start items-center gap-4 lg:max-w-[80%] min-w-[78%">
