@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import Navbar from "./Navbar.jsx"
 import Hero from "./Hero.jsx"
 import Container from "./Container.jsx"
+import Footer from './Footer.jsx';
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
     <Navbar />
     <Hero />
     <Container />
-
+    <Footer />
     </>
   )
 }
