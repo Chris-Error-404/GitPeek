@@ -33,16 +33,6 @@ GitPeek is a mini React application that allows users to search and view GitHub 
 
 <br>
 
-## Deployment
-
-The app is deployed on [Vercel](https://vercel.com), with auto-updates triggered on every push to the main branch.
-
-🔗 **Live Demo**: _Coming soon_
-
----
-
-<br>
-
 ## How It Works
 
 1. User enters a valid GitHub username.
@@ -77,7 +67,7 @@ While this is a personal learning project, suggestions, issues, or ideas for imp
 git clone https://github.com/your-username/GitPeek.git
 
 # Move into the directory
-cd gitbuddy
+cd GitPeek
 
 # Install dependencies
 npm install
