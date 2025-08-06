@@ -15,7 +15,7 @@ function Hero(){
                     <h1 className="mb-2 text-[var(--foreground)] text-[min(10vw,36px)] sm:text-[28px] md:text-[32px] font-semibold text-center">
                         The Easiest Way to Peek GitHub Profiles
                     </h1>
-                    <p className="mb-4 text-lg font-normal text-[var(--foreground)] lg:w-[60%] text-center">
+                    <p className="mb-4 text-base lg:text-lg font-normal text-[var(--foreground)] lg:w-[60%] text-center">
                         Want to take a quick look at someone's Github porfile? GitPeek makes it simple. Enter a username and instantly preview their profile fast, clean and frustration free.
                     </p>
 
