@@ -45,7 +45,7 @@ function PeekCard(){
             </div>
 
             {/* Card bottom | Extra */}
-            <ul className="more text-[var(--dark-gray)] pt-4 text-sm flex flex-col gap-1.5">
+            <ul className="more text-[var(--dark-gray)] pt-4 text-sm flex flex-col gap-2">
                 <li>followers: {user.followers}</li>
                 <li>following: {user.following}</li>
                 <li>public_repos: {user.public_repos}</li>
