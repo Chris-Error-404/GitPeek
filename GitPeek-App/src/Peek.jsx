@@ -19,16 +19,35 @@ function Peek() {
         setUserData(null);
 
         try {
+            // 1️⃣ Fetch user data
             const res = await fetch(`https://api.github.com/users/${username}`);
             if (res.status === 404) {
                 setError(true);
                 setLoading(false);
                 return;
             }
-            if (!res.ok) throw new Error("Failed to fetch");
+            if (!res.ok) throw new Error("Failed to fetch user");
 
             const data = await res.json();
-            setUserData(data);
+
+            // 2️⃣ Fetch repos for languages
+            const reposRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
+            const repos = await reposRes.json();
+
+            const languageSet = {};
+            repos.forEach(repo => {
+                if (repo.language) {
+                    languageSet[repo.language] = (languageSet[repo.language] || 0) + 1;
+                }
+            });
+
+            const languages = Object.keys(languageSet).map(lang => ({
+                name: lang,
+                count: languageSet[lang]
+            }));
+
+            // 3️⃣ Save combined data
+            setUserData({ ...data, languages });
         } catch (err) {
             console.error(err);
             setError(true);
@@ -67,10 +86,10 @@ function Peek() {
                     </div>
                 </div>
 
-                {/* peek result */}
+                {/* Peek result */}
                 <div>
                     {error && <UserNotFound />}
-                    {userData && <PeekCard user={userData} />}
+                    {userData && !error && <PeekCard user={userData} />}
                 </div>
             </div>
         </div>
