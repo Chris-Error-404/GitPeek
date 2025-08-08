@@ -20,32 +20,39 @@ function App() {
     });
   }, []);
 
-  // ✅ Set theme on initial load
-  useEffect(() => {
-    const userTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// Set theme on initial load
+useEffect(() => {
+  const userTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    const dark = userTheme === 'dark' || (!userTheme && systemPrefersDark);
-    document.documentElement.classList.toggle('dark', dark);
-    setIsDark(dark);
-  }, []);
+  const dark = userTheme === 'dark' || (!userTheme && systemPrefersDark);
 
-  // ✅ Function to toggle theme
-  const toggleDarkMode = () => {
-    const newDark = !isDark;
-    document.documentElement.classList.toggle('dark', newDark);
-    localStorage.setItem('theme', newDark ? 'dark' : 'light');
-    setIsDark(newDark);
-  };
+  // Apply to html and body
+  document.documentElement.classList.toggle('dark', dark);
+  document.body.classList.toggle('dark', dark);
+
+  setIsDark(dark);
+}, []);
+
+// Function to toggle theme
+const toggleDarkMode = () => {
+  const newDark = !isDark;
+
+  // Apply to html and body
+  document.documentElement.classList.toggle('dark', newDark);
+  document.body.classList.toggle('dark', newDark);
+
+  localStorage.setItem('theme', newDark ? 'dark' : 'light');
+  setIsDark(newDark);
+};
+
 
   return (
     <>
-    <main className="bg-[var(--foreground)] dark:bg-[var(--background)] transition-all duration-200">
       <Navbar onToggleDark={toggleDarkMode} isDark={isDark} />
       <Hero />
       <Container />
       <Footer />
-    </main>
     </>
   );
 }

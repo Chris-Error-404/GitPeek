@@ -25,9 +25,9 @@ function HowItWorks(){
 
             <BulletPointCard aosDelay="0" header="Search by Username" paragraph="Looking for a developer? Just type their GitHub username into the search bar. GitPeek instantly fetches their public profile using the GitHub API." />
 
-            <BulletPointCard aosDelay="50" header="Real-Time Fetching" paragraph="When you hit 'Peak', GitPeek sends a live request to GitHub and retrieves public details like avatar, name, bio, location, and repository stats." />
+            <BulletPointCard aosDelay="50" header="Real-Time Fetching" paragraph="When you hit 'Peak', GitPeek sends a live request to GitHub and retrieves public details like avatar, name, followers, following etc." />
 
-            <BulletPointCard aosDelay="100" header="Peek the Profile" paragraph="The information is displayed in a clean, focused card, perfect for quick viewing, inspiration, or sharing with friends and collaborators." />
+            <BulletPointCard aosDelay="100" header="Peek the Profile" paragraph="The information is displayed in a clean, focused card, perfect for quick viewing" />
 
             </div>
 
