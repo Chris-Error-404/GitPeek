@@ -22,7 +22,7 @@ function PeekCard({ user }) {
 
                     <div className="mt-1 flex items-center justify-start gap-2 w-full">
                         <MoreProjectsButton buttonText="View profile" buttonLink={user.html_url} />
-                        <CopyButton />
+                        <CopyButton textToCopy={user.html_url} />
                     </div>
                 </div>
             </div>
