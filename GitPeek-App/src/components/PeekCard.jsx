@@ -38,7 +38,6 @@ function PeekCard({ user }) {
             <ul className="more text-[var(--darker-gary)] dark:text-[var(--dark-gray)] pt-4 text-sm flex flex-col gap-2">
                 <li>followers: {user.followers}</li>
                 <li>following: {user.following}</li>
-                <li>Open to work: {user.hireable ? "Yes" : "No"}</li>
                 <li>public_repos: {user.public_repos}</li>
                 <li>public_gists: {user.public_gists}</li>
                 <li>Languages_used:{" "}{user.languages && user.languages.length > 0 ? user.languages.map(lang => lang.name).join(", ") : "No public repos with detectable languages"}
@@ -48,6 +47,7 @@ function PeekCard({ user }) {
                 </li>
                 <li>x/twitter: <a href={link} target="_blank" rel="noopener noreferrer" className="underline">{xUsername}</a></li>
                 <li>company: {user.company || "N/A"}</li>
+                <li>Open to work: {user.hireable ? "Yes" : "No"}</li>
                 <li>location: {user.location || "N/A"}</li>
                 <li>type: {user.type}</li>
                 <li>id: {user.id}</li>
