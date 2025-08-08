@@ -9,6 +9,19 @@ GitPeek is a mini React application that allows users to search and view GitHub 
 
 <br>
 
+## Why Use GitPeek Instead of Viewing GitHub Directly
+
+- **No clutter, no distractions** – focuses only on the most important profile details without extra sections or visuals.
+- **Faster loading and scanning** – loads only the essentials, making it quicker than navigating a full GitHub profile.
+- **Consistent layout** – every profile is displayed in the same clean, predictable format.
+- **Instant language overview** – aggregates all detected programming languages without opening multiple repositories.
+- **Better for quick decisions** – see key information in seconds to decide whether to view the full profile.
+- **Privacy-friendly preview** – no need to log in or interact directly with the profile to get the information.
+
+---
+
+<br>
+
 ## Project Goals
 
 - Provide a simple and clean GitHub user search experience
