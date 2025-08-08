@@ -5,13 +5,13 @@ import InputTag from "./components/InputTag.jsx";
 function Peek(){
     return(
         <>
-            <div className="border border-[var(--tag)] rounded-xs py-4 px-4">
+            <div className="border border-[var(--lighter-tag)] dark:border-[var(--tag)] rounded-sm py-4 px-4">
 
                 {/* TAKE A PEEK*/}
                 <div className="flex justify-start items-center lg:max-w-[80%] min-w-[78%]">
 
                     <div>
-                        <h2 className="mb-4 text-[var(--foreground)] text-[min(10vw,22px)] font-semibold text-left">
+                        <h2 className="mb-4 text-[var(--backgournd)] dark:text-[var(--foreground)] text-[min(10vw,22px)] font-semibold text-left">
                             Take a peek
                         </h2>
                     </div>
@@ -25,7 +25,7 @@ function Peek(){
 
  
                         <div className="">
-                            <h2 className="mb-4 text-base font-medium text-[var(--foreground)] flex items-start justify-start gap-1.5"> Please enter a username</h2>
+                            <h2 className="mb-4 text-base font-medium text-[var(--backgournd)] dark:text-[var(--foreground)] flex items-start justify-start gap-1.5"> Please enter a username</h2>
 
                             <form action="" className="flex items-center justify-start gap-2 pr-4">
                                 <InputTag placeholderText="github-username" />

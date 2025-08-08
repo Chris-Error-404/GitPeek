@@ -22,18 +22,18 @@ const user = {
 function PeekCard(){
     return(
         <>
-        <div className="border border-[var(--foreground)]/30 rounded-xs py-4 px-4">
+        <div className="border border-[var(--background)]/20 drak:border-[var(--foreground)]/30 rounded-xs py-4 px-4">
         
             {/* Card top | main */}
-            <div className="flex flex-col lg:flex-row items-start justify-start gap-6 border-b border-[var(--tag)] pb-5">
+            <div className="flex flex-col lg:flex-row items-start justify-start gap-6 border-b border-[var(--lighter-tag)] drak:border-[var(--tag)] pb-5">
 
-                <img src={user.avatar} alt="" className="rounded-full w-[120px] h-[120px]" />
+                <img src={user.avatar} alt="" className="rounded-full w-[120px] h-[120px] border border-[var(--lighter-tag)]" />
 
                 <div className="flex flex-col items-start justify-start gap-1.5 w-full">
-                    <h3 className="font-semibold text-lg text-[var(--foreground)]">
+                    <h3 className="font-semibold text-lg text-[var(--background)] dark:text-[var(--foreground)]">
                         {user.name}
                     </h3>
-                    <h4 className="font-medium text-base text-[var(--foreground)]">
+                    <h4 className="font-medium text-base text-[var(--background)] dark:text-[var(--foreground)]">
                         {user.username}
                     </h4>
                     
@@ -45,7 +45,7 @@ function PeekCard(){
             </div>
 
             {/* Card bottom | Extra */}
-            <ul className="more text-[var(--dark-gray)] pt-4 text-sm flex flex-col gap-2">
+            <ul className="more text-[var(--darker-gary)] dark:text-[var(--dark-gray)] pt-4 text-sm flex flex-col gap-2">
                 <li>followers: {user.followers}</li>
                 <li>following: {user.following}</li>
                 <li>public_repos: {user.public_repos}</li>

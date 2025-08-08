@@ -3,18 +3,18 @@ import BulletPointCard from "./components/BulletPointCard.jsx";
 function HowItWorks(){
     return(
         <>
-        <div className="border border-[var(--tag)] rounded-xs py-4 pb-5 px-4 h-fit">
+        <div className="border border-[var(--lighter-tag)] dark:border-[var(--tag)] rounded-xs py-4 pb-5 px-4 h-fit">
 
             {/* HOW IT WORKS HEADER */}
             <div className="flex justify-start items-center gap-4 lg:max-w-[80%] min-w-[78%">
 
                 {/* icon */}
                 <div>
-                    <i className="bx bxs-check-circle text-[var(--background)] text-3xl"></i>
+                    <i className="bx bxs-check-circle text-[var(--foreground)] dark:text-[var(--background)] text-3xl mb-4"></i>
                 </div>
 
                 <div>
-                    <h2 className="mb-4 text-[var(--foreground)] text-[min(10vw,22px)] font-semibold text-left">
+                    <h2 className="mb-4 text-[var(--background)] dark:text-[var(--foreground)] text-[min(10vw,22px)] font-semibold text-left">
                         How does it work?
                     </h2>
                 </div>

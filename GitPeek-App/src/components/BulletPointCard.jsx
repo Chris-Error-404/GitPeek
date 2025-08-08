@@ -5,12 +5,12 @@ function BulletPointCard(props){
 
                 {/* icon */}
                 <div>
-                    <i className="bx bxs-check-circle text-[var(--foreground)] text-[min(14vw,30px)]"></i>
+                    <i className="bx bxs-check-circle text-[var(--background)] dark:text-[var(--foreground)] text-[min(14vw,30px)]"></i>
                 </div>
 
                 <div className="">
-                    <h2 className="mb-1 text-base font-medium text-[var(--foreground)] flex items-start justify-start gap-1.5">{props.header}</h2>
-                    <p className="text-[var(--dark-gray)] text-sm">{props.paragraph}</p>
+                    <h2 className="mb-1 text-base font-medium text-[var(--background)] dark:text-[var(--foreground)] flex items-start justify-start gap-1.5">{props.header}</h2>
+                    <p className="text-[var(--darker-gray)] dark:text-[var(--dark-gray)] text-sm">{props.paragraph}</p>
                 </div>
             </div> 
         </>

@@ -1,4 +1,4 @@
-function Navbar(){
+function Navbar({ onToggleDark, isDark }){
     return(
         <>
         <nav className="backdrop-blur-lg bg-[var(--forekground)]/30 dark:bg-[var(--background)]/30 sticky top-0 z-10">
@@ -7,7 +7,7 @@ function Navbar(){
 
                 <div>
                     {/* theme button */}
-                    <i className="bx bx-sun text-[var(--background)] dark:text-[var(--foreground)] text-xl cursor-pointer"></i>
+                    <i className={`bx ${isDark ? 'bx-moon' : 'bx-sun'} text-[var(--background)] dark:text-[var(--foreground)] text-xl cursor-pointer`} onClick={onToggleDark}></i>
                 </div>
             </div>
 
@@ -17,3 +17,4 @@ function Navbar(){
 };
 
 export default Navbar;
+

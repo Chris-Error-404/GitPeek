@@ -21,7 +21,7 @@
   --darker-gray: #4a4a4a; /* for light mode */
   
   --tag: #262626;
-  --lighter-tag: #f8fafc; /* for light mode */
+  --lighter-tag: #e6e5e5; /* for light mode */
 
   /* shadcn | dark */
   --background: hsl(222.2, 84%, 4.9%); /*  Main app/page background */
@@ -76,7 +76,6 @@ input{
 
 input::placeholder{
   font-family: "Fira Code", monospace;
-  color: var(--foreground);
 }
 
 .typicalDeveloper{
