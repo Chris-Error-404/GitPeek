@@ -1,7 +1,14 @@
 import MoreProjectsButton from "./MoreProjectsButton.jsx";
 import CopyButton from "./CopyButton.jsx";
 
+
 function PeekCard({ user }) {
+
+    /* twitter link conversion */
+    let xUsername = user.twitter_username;
+    let link = 'https://x.com/' + xUsername ;
+    
+
     return (
         <div className="border border-[var(--background)]/20 dark:border-[var(--foreground)]/30 rounded-xs py-4 px-4">
             {/* Card top */}
@@ -39,6 +46,7 @@ function PeekCard({ user }) {
                 <li>
                     blog: {user.blog ? <a href={user.blog} target="_blank" rel="noopener noreferrer" className="underline">{user.blog}</a> : "N/A"}
                 </li>
+                <li>x/twitter: <a href={link} target="_blank" rel="noopener noreferrer" className="underline">{xUsername}</a></li>
                 <li>company: {user.company || "N/A"}</li>
                 <li>location: {user.location || "N/A"}</li>
                 <li>type: {user.type}</li>
