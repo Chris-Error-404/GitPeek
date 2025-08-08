@@ -34,7 +34,7 @@ function PeekCard({ user }) {
                 <li>Open to work: {user.hireable ? "Yes" : "No"}</li>
                 <li>public_repos: {user.public_repos}</li>
                 <li>public_gists: {user.public_gists}</li>
-                <li>Languages used:{" "}{user.languages && user.languages.length > 0 ? user.languages.map(lang => lang.name).join(", ") : "No public repos with detectable languages"}
+                <li>Languages_used:{" "}{user.languages && user.languages.length > 0 ? user.languages.map(lang => lang.name).join(", ") : "No public repos with detectable languages"}
                 </li>
                 <li>
                     blog: {user.blog ? <a href={user.blog} target="_blank" rel="noopener noreferrer" className="underline">{user.blog}</a> : "N/A"}
