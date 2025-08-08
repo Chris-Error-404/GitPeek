@@ -22,10 +22,10 @@ const user = {
 function PeekCard(){
     return(
         <>
-        <div className="border border-[var(--background)]/20 drak:border-[var(--foreground)]/30 rounded-xs py-4 px-4">
+        <div className="border border-[var(--background)]/20 dark:border-[var(--foreground)]/30 rounded-xs py-4 px-4">
         
             {/* Card top | main */}
-            <div className="flex flex-col lg:flex-row items-start justify-start gap-6 border-b border-[var(--lighter-tag)] drak:border-[var(--tag)] pb-5">
+            <div className="flex flex-col lg:flex-row items-start justify-start gap-6 border-b border-[var(--lighter-tag)] darkk:border-[var(--tag)] pb-5">
 
                 <img src={user.avatar} alt="" className="rounded-full w-[120px] h-[120px] border border-[var(--lighter-tag)]" />
 

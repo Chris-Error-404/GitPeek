@@ -5,7 +5,7 @@ import InputTag from "./components/InputTag.jsx";
 function Peek(){
     return(
         <>
-            <div className="border border-[var(--lighter-tag)] dark:border-[var(--tag)] rounded-sm py-4 px-4">
+            <div className="border border-[var(--lighter-tag)] dark:border-[var(--tag)] rounded-sm py-4 px-4 transition-all duration-200">
 
                 {/* TAKE A PEEK*/}
                 <div className="flex justify-start items-center lg:max-w-[80%] min-w-[78%]">
