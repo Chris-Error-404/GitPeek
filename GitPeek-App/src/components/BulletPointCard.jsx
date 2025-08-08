@@ -1,7 +1,7 @@
 function BulletPointCard(props){
     return(
         <>
-            <div data-aos="fade-up" data-aos-easing="ease-in-cubic" data-aos-delay={props.aosDelay} className="flex justify-start items-center gap-4 lg:max-w-[80%] min-w-[78%]">
+            <div data-aos="fade-up" data-aos-easing="ease-in-cubic" data-aos-delay={props.aosDelay} className="flex justify-start items-center gap-4 lg:max-w-[80%] min-w-[78%] bg-[var(--foreground)] dark:bg-[var(--background)]">
 
                 {/* icon */}
                 <div>
