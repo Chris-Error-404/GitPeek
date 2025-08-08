@@ -9,7 +9,7 @@ function PeekCard({ user }) {
                 <img
                     src={user.avatar_url}
                     alt={user.name || user.login}
-                    className="rounded-full w-[120px] h-[120px] border border-[var(--lighter-tag)]"
+                    className="rounded-full w-[120px] h-[120px]"
                 />
 
                 <div className="flex flex-col items-start justify-start gap-1.5 w-full">
