@@ -35,7 +35,7 @@ function PeekCard({ user }) {
                 <li>public_repos: {user.public_repos}</li>
                 <li>public_gists: {user.public_gists}</li>
                 <li>
-                    blog: {user.blog ? <a href={user.blog} className="underline">{user.blog}</a> : "N/A"}
+                    blog: {user.blog ? <a href={user.blog} className="underline" target="_blank" rel="noopener noreferrer">{user.blog}</a> : "N/A"}
                 </li>
                 <li>company: {user.company || "N/A"}</li>
                 <li>location: {user.location || "N/A"}</li>
