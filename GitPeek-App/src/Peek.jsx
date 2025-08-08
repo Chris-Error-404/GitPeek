@@ -56,7 +56,7 @@ function Peek() {
                             Please enter a username
                         </h2>
 
-                        <form onSubmit={fetchGitHubUser} className="flex items-center justify-start gap-2 pr-4">
+                        <form onSubmit={fetchGitHubUser} className="flex items-center justify-start gap-2 w-fit">
                             <InputTag
                                 placeholderText="github-username"
                                 value={username}
