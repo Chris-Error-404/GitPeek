@@ -42,13 +42,29 @@ function PeekCard({ user }) {
                 <li>public_gists: {user.public_gists}</li>
                 <li>Languages_used:{" "}{user.languages && user.languages.length > 0 ? user.languages.map(lang => lang.name).join(", ") : "No public repos with detectable languages"}
                 </li>
-                <li>
-                    blog: {user.blog ? <a href={user.blog} target="_blank" rel="noopener noreferrer" className="underline">{user.blog}</a> : "N/A"}
+
+                {user.blog && (
+                 <li>
+                    blog: <a href={user.blog} target="_blank" rel="noopener noreferrer" className="underline">{user.blog}</a>
                 </li>
-                <li>x/twitter: <a href={link} target="_blank" rel="noopener noreferrer" className="underline">{xUsername}</a></li>
-                <li>company: {user.company || "N/A"}</li>
+                )}
+  
+                {user.twitter_username && (
+                <li>
+                    x/twitter: <a href={link} target="_blank" rel="noopener noreferrer" className="underline">{xUsername}</a>
+                </li>
+                )}
+
+                {user.company && (
+                    <li>company: {user.company}</li>
+                )}
+            
                 <li>Open to work: {user.hireable ? "Yes" : "No"}</li>
-                <li>location: {user.location || "N/A"}</li>
+
+                {user.location && (
+                    <li>location: {user.location}</li>
+                )}
+                
                 <li>type: {user.type}</li>
                 <li>id: {user.id}</li>
                 <li>Joined: {new Date(user.created_at).toLocaleDateString()}</li>
