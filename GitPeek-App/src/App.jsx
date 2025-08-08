@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-    <main className="bg-[var(--foreground)] dark:bg-[var(--background)]">
+    <main className="bg-[var(--foreground)] dark:bg-[var(--background)] transition-all duration-200">
       <Navbar onToggleDark={toggleDarkMode} isDark={isDark} />
       <Hero />
       <Container />
