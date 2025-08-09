@@ -41,8 +41,11 @@ function PeekCard({ user }) {
                 <li>public_repos: {user.public_repos}</li>
                 <li>public_gists: {user.public_gists}</li>
                 
-                <li>Languages_used:{" "}{user.languages && user.languages.length > 0 ? user.languages.map(lang => lang.name).join(", ") : "No public repos with detectable languages"}
-                </li>
+                {user.languages && (
+                    <li>Languages_used:{user.languages.map(lang => lang.name).join(", ")}
+                    </li>
+                )}
+   
 
                 {user.blog && (
                  <li>
