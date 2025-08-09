@@ -50,8 +50,15 @@ const toggleDarkMode = () => {
   return (
     <>
       <Navbar onToggleDark={toggleDarkMode} isDark={isDark} />
-      <Hero />
-      <Container />
+      
+      <section id="hero">
+          <Hero />
+      </section>
+
+      <section id="content">
+        <Container />
+      </section>
+  
       <Footer />
     </>
   );
